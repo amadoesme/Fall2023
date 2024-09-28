@@ -1,0 +1,26 @@
+#Esmeralda Amado
+
+import random
+
+#I made an input option so the user can choose an animal
+print("Choose one of the animals listed: Octopus, Tarantula, Snake, Fish.")
+print("Remember what you chose")
+
+#The program asks 2 yes/no questions to guess the animal
+question1=input("Does your animal live underwater? [Y/N]: ")
+question2=input("Does your animal have legs? [Y/N]: ")
+
+#The program gets to guess the animal
+if(question1 == "Y"):
+  if(question2 == "Y"):
+      print("Octopus")
+  else:
+      print("Fish")
+else:
+  if(question2 == "Y"): 
+    print("Tarantula")
+  else:
+    print("Snake") 
+
+#The computer asks if the answer is right
+input("Is it correct? [Y/N]: ")
