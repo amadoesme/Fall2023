@@ -1,0 +1,95 @@
+# Esmeralda Amado
+
+import random
+
+# Define a function to roll a dice with a given number of sides
+def dice(sides):
+  # Return a random integer between 1 and the number of sides
+  return random.randint(1, sides)
+
+# Define a function to roll a given number of dice with a given number of sides
+def roll_dice(num_dice, num_sides):
+  # Initialize an empty list to store the results
+  results = []
+  # Loop for the number of dice
+  for i in range(num_dice):
+    # Append the result of rolling a dice with the number of sides to the list
+    results.append(dice(num_sides))
+  # Return the list of results
+  return results
+
+# Define a function to print the results of rolling dice
+def print_results(results):
+  # Print a line of dashes
+  print("----------------------------------")
+  # Loop through the results
+  for result in results:
+    # Print the result with a space after it
+    print(result, end=" ")
+  # Print a newline
+  print()
+  # Print another line of dashes
+  print("----------------------------------")
+
+# Define a function to get the user input for the number of dice and sides
+def get_user_input():
+  # Initialize variables to store the user input
+  # Loop until valid input is entered
+  while True:
+    # Try to get the user input for the number of dice and convert it to an integer
+
+    num_dice = input("Enter the number of dice to roll-> ")
+    if num_dice.isnumeric() == False:
+      print("Invalid input. Enter an integer.")
+    else:
+      num_dice = int(num_dice)
+      break
+  
+  # Loop until valid input is entered
+  while True:
+    # Try to get the user input for the number of sides and convert it to an integer
+
+      num_sides = input("Enter the number of sides the dice have-> ")
+      if num_sides.isnumeric() == False:
+        print("Invalid input. Enter an integer.")
+
+      elif int(num_sides) not in [4, 6, 8, 10, 12, 20]:
+        print("Invalid input. Enter one of these options: 4, 6, 8, 10, 12, or 20.")
+      
+      else:
+        num_sides = int(num_sides)
+        break
+  
+  # Return the user input as a tuple
+  return (num_dice, num_sides)
+
+# Define a function to run the main program logic
+def main():
+  # Get the user input for the number of dice and sides using the get_user_input function
+  num_dice, num_sides = get_user_input()
+  
+  # Loop until the user wants to quit
+  while True:
+    # Roll the dice using the roll_dice function and store the results in a variable
+    results = roll_dice(num_dice, num_sides)
+    # Print the results using the print_results function
+    print_results(results)
+    
+    # Get the user input for what to do next and convert it to lowercase
+    choice = input("Press Enter to re-roll, q to quit, or n to set new parameters-> ").lower()
+    
+    # Check if the user wants to quit by entering 'q', 'quit', or 'exit'
+    if choice in ['q', 'quit', 'exit']:
+      # Print a farewell message and break out of the loop
+      print("Thank you for playing!")
+      break
+    
+    # Check if the user wants to set new parameters by entering 'n' or 'new'
+    elif choice in ['n', 'new']:
+      # Get new user input for the number of dice and sides using the get_user_input function and update the variables accordingly
+      num_dice, num_sides = get_user_input()
+    
+    # Otherwise, assume that the user wants to re-roll with the same parameters and continue the loop
+
+# Call the main function to start the program
+main()
