@@ -1,0 +1,33 @@
+# Esmeralda Amado
+
+# A. I made a list with some letters and then print it
+my_char_list = ['a', 'b', 'a', 'c', 'd', 'a', 'd', 'z', 'r', 'a']
+print(my_char_list)
+print("----------------")
+
+# B. I print out how many characters the list has
+print(len(my_char_list))
+print("----------------")
+
+# C. I print out the number of the character of the letter 'd'
+print(my_char_list.index('d'))
+print("----------------")
+
+# D. I insert another 'a' after the letter 'c' in the list
+my_char_list.insert(my_char_list.index('c') + 1, 'a')
+print(my_char_list)
+print("----------------")
+
+# E. I print the new number of characters that is now on the list
+print(len(my_char_list))
+print("----------------")
+
+# F. I print out how many letters 'a' are on the list
+print(my_char_list.count('a'))
+print("----------------")
+
+# G. I use the while loop to print out each letter in order
+letter_listed = 0
+while letter_listed < len(my_char_list):
+    print(my_char_list[letter_listed])
+    letter_listed += 1
