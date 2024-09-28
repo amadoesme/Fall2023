@@ -1,0 +1,46 @@
+# Esmeralda Amado
+
+# A. I made a list with numbers and print them
+num_list = [34, 42, 99, 1301, 1, 78, 314, 818, 777]
+print(num_list)
+print("----------------")
+
+# B. Calculating the sum and largest number
+total = 0
+largest = num_list[0]
+num = 0
+# I used the while loop to calculate the summary of the list
+while num < len(num_list):
+    print(num_list[num], end=" ")
+    total += num_list[num]
+  # The if inside the while loop is to find the largest number
+    if num_list[num] > largest:
+        largest = num_list[num]
+    num += 1
+# The total 
+print("\nTotal =", total)
+# The largest number
+print("Largest element =", largest)
+print("----------------")
+
+# C. My program is the same as the last one, except with new numbers
+num_list2 = [3, 7, 999, 1981, 1066, -4086, 33]
+
+# Same as the last one I start calculating the largest number
+total2 = 0
+largest2 = num_list2[0]
+total2 = 0
+largest2 = num_list[0]
+num2 = 0
+# I used the while loop to calculate the summary of the list
+while num2 < len(num_list2):
+    print(num_list2[num2], end=" ")
+    total2 += num_list2[num2]
+  # The if inside the while loop is to find the largest number
+    if num_list2[num2] > largest2:
+        largest2 = num_list2[num2]
+    num2 += 1
+# The total 
+print("\nTotal =", total2)
+# The largest number
+print("Largest element =", largest2)
