@@ -1,0 +1,28 @@
+import random 
+
+#The computer and the user choose a random value 
+computer_picked=random.randint(0,2)
+user_picked= input('Enter your choice of Rock(R), Paper(P), or Scissors(S)')
+
+if (computer_picked == 0):
+  computer_picked = "R"
+elif (computer_picked ==1):
+  computer_picked = "P"
+else:
+  computer_picked= "S"
+  
+#They show what each one picked
+print(user_picked)
+print(computer_picked)
+
+#I used if/else statements to get a winner 
+if user_picked == computer_picked:
+  print("It's a tie!")
+elif user_picked == "R" and computer_picked == "S": 
+   print("You win!")
+elif user_picked == "S"and computer_picked == "P":
+  print("You win!")
+elif user_picked == "P"and computer_picked == "R":
+  print("You win!")
+else:
+  print("Computer wins!")
