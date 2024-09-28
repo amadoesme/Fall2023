@@ -1,0 +1,17 @@
+# Esmeralda Amado
+
+subtotal = 0 
+
+while True:
+  # If the user inputs a q the program stops and gives it his subtotal
+    user_input = int(input("Enter a number to add or 'q' to quit: "))
+    if user_input == 'q':
+        print(f"Your Grand Total is:" ,subtotal)
+        print("Thank you")
+        break
+    else:
+      # If the user enters an integer they get a sum of numbers, once satisfied 
+      # they can press 'q'
+        subtotal += user_input
+        print(f"{int(user_input)} + {subtotal - int(user_input)} = {subtotal}")
+        print(f"Your subtotal is:",subtotal)
