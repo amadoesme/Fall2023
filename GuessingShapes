@@ -1,0 +1,25 @@
+#Esmeralda Amado 
+
+import random 
+
+#Instructions on how the program works
+print("I will ask some questions to guess the shape your thinking of.")
+print("The shapes could be Triangle, Square, Pentagon and Hexagon.")
+
+#User answers these questions to give the program an idea of what they chose
+question1=input("Do the sides have equal length and all angles measuring 90 degrees? [Y/N]: ")
+question2=input("Does it have more than 3 sides? [Y/N]: ")
+question3=input("Is their angle 108 degrees? [Y/N]: ")
+
+#The program guesses the shape
+if(question1 == "Y"):
+      print("Square")
+elif question2 == "N":
+    print("Triangle")
+elif question3 == "Y":
+  print("Pentagon")
+else:
+  print("Hexagon")
+
+#The program makes sure with the user if the answer is correct
+input("Is my answer correct? [Y/N]: ")
