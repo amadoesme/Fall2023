@@ -1,0 +1,73 @@
+#Esmeralda Amado
+
+import random
+
+#Secret number the computer has chosen
+secret_number = random.randint(1, 10)
+
+#This helps to make the program stop once the correct number is chosen
+finished_game = False
+
+#Intructions on how the game works
+print("The computer has selected a secret number from 1 to 10 inclusive.")
+print("You have to 4 times to guess my secret number.")
+
+#The user enters the number they thought of 
+users_number = int(input(print("Enter your guess here: ")))
+
+#attempt 1
+if not finished_game:
+  if users_number == secret_number:
+    print("You won!")
+    finished_game = True
+  elif users_number > secret_number:
+    print("Your number is greater than my secret number")
+  else:
+    print("Your number is less than my secret number")
+
+  print(users_number)
+
+#attempt 2
+guess_2 = int(input(print("Enter your second guess here: ")))
+
+if not finished_game:
+  if guess_2 == secret_number:
+    print("You won!")
+    finished_game = True
+  elif guess_2 > secret_number:
+    print("Your number is greater than my secret number")
+  else:
+    print("Your number is less than my secret number")
+
+print(guess_2)
+
+#attempt 3
+guess_3 = int(input(print("Enter your third guess here: ")))
+
+if not finished_game:
+  if guess_3 == secret_number:
+    print("You won!")
+    finished_game = True
+  elif guess_3 > secret_number:
+    print("Your number is greater than my secret number")
+  else:
+    print("Your number is less than my secret number")
+
+print(guess_3)
+
+#attempt 4
+attempt4 = int(input(print("Enter your fourth guess here: ")))
+
+if not finished_game:
+  if attempt4 == secret_number:
+    print("You won!")
+    finished_game = True
+  elif attempt4 > secret_number:
+    print("Your number is greater than my secret number")
+  else:
+    print("Your number is less than my secret number")
+
+
+#I print the users last attempt and the number the program had thought of
+print(attempt4)
+print(secret_number)
