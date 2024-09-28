@@ -1,0 +1,52 @@
+#  Esmeralda Amado
+
+# A. List variables of certain numbers
+my_num_list = [3, 6, 4, 83, 2, 7, 2, 17, 4, 9, 0, 44, 2]
+print(my_num_list)
+print("----------------")
+
+# B. Print out the number in character 3
+print(my_num_list[3])
+print("----------------")
+
+# C. I add the number 8 at the end of the list 
+my_num_list.append(8)
+print(my_num_list)
+print("----------------")
+
+# D. I insert 33 after 83 and then print the list
+my_num_list.insert(my_num_list.index(83) + 1, 33)
+print(my_num_list)
+print("----------------")
+
+# E. I print all the two's that are in the list
+print(my_num_list.count(2))
+print("----------------")
+
+# F. I make the numbers go from lower to higher
+my_num_list.sort()
+print(my_num_list)
+print("----------------")
+
+# G. I print out the number of characters in the list
+print(len(my_num_list))
+print("----------------")
+
+# H. I eliminate the 4 last numbers of the list and print them
+for num in range(4):
+    print(my_num_list.pop())
+
+# I print the list to see the new one without the last 4 I eliminated
+print("Updated List:")
+print(my_num_list)
+print("----------------")
+
+# I. I print out how many characters are in the new list
+print(len(my_num_list))
+print("----------------")
+
+# J. I use the while loop to print out each number in order
+num = 0
+while num < len(my_num_list):
+    print(my_num_list[num])
+    num+= 1
