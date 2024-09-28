@@ -1,0 +1,55 @@
+# Esmeralda Amado
+
+# 1. I printed a string using define function
+def sentence():
+    print("hello from my function")
+
+# ------------------
+
+# 2. I did a definition called order numbers so i could remember they had to go in order
+def order_numbers():
+    # I used for loop to make a range of numbers from 1 to 20
+    for numbers_list in range (1,21):
+        # I print the numbers in the same line
+        print(numbers_list, end=" ")
+
+# ------------------
+
+# 3. I made a definition with a parameter
+def attribute_num(number):
+    # I return the number i'm attributing and multiplying by 7
+    return number * 7
+
+# ------------------
+
+# 4. Made a definition with a parameter
+def list_words(word):
+    # For sorting the words in order
+    word.sort()
+    # I use the for funtion to print my sorted words in the same line 
+    for words_listed in word:
+         print(words_listed, end=", ")
+
+# This is the list i used for my words
+words_sentence = ['star', 'wars', 'padme', 'skywalker', 'Vader']
+
+# ------------------
+
+# These are my answers. Called lists
+
+# 1
+sentence()
+print("\n------------------")
+
+# 2
+order_numbers()
+print("\n------------------")
+
+# 3
+# The answer will be the number i'm attributing with the number 7 given in the problem
+answer = (attribute_num(7))
+print(answer)
+print("\n------------------")
+
+# 4
+list_words(words_sentence)
