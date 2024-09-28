@@ -1,0 +1,26 @@
+# Esmeralda Amado
+
+# I made a program that would give me an object in a triangle form
+Hash = 1
+while Hash <= 5:
+  # I couldn't use the hashtag so I used a star instead
+    print("*" * Hash)
+    Hash += 1
+
+# I put this to separate the second activity
+print("--------------------------")
+
+# The user inputs the number of rows they want 
+rows = int(input("Enter the number of rows: "))
+AtSymbole = 1
+
+# The program creates the number of rows
+while AtSymbole <= rows:
+    FirstRow = 1
+  # Like the last one they keep adding and making a triangle shape
+    while FirstRow <= AtSymbole:
+        print("@", end="")
+        FirstRow += 1
+      # The rows get printed
+    print(rows)
+    AtSymbole += 1
