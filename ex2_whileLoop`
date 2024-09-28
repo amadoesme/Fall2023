@@ -1,0 +1,16 @@
+# Esmeralda Amado
+
+# Variables that help with the summary 
+Number = 1
+total = 0
+
+# Loop through numbers from 1 to 100
+while Number <= 100:
+    total += Number
+    
+    # It prints the number and the total
+    print(f"{Number} + {total - Number} = {total}")
+    Number += 1
+
+# Print the final total
+print(f"Total:", total)
