@@ -1,0 +1,94 @@
+# Esmeralda Amado
+
+import random
+
+# 1. The program randomly prints out numbers from 1 to 6 as if it were a dice
+def dice():
+    print(random.randint(1,6))
+
+dice()
+
+# ------------------
+
+# 2.1 Same as the first example, except this time it returns it
+def dice_1():
+    return random.randint(1,6)
+
+print(dice_1())
+
+# ------------------
+
+# 2.2 this time the dice retruns the random value the program chooses
+def dice_2(sides):
+    return random.randint(1, sides)
+
+# Value of sides that I choose for my dice
+sides_choosen = 15
+
+print(dice_2(sides_choosen))
+
+# ------------------
+
+#  2.3 I default the sides to have 6
+def dice_3(sides):
+    # The program chooses a random number from the number provided by the user
+    if sides == " ":
+        return random.randint(1, 6)
+    else:
+        return random.randint(1, sides)
+
+# User input 
+user_sides = int(input("Enter a number of sides for the dice: "))
+
+print(dice_3(user_sides))
+
+# ------------------ 
+
+# 2.4 Accepted values from the program
+accepted_values = [4,6,8,10,12,20]
+
+# User inputs the sides they want their dice to have 
+side_input= input("Enter a number of sides for the dice: ")
+
+# This is to choose whether the user inputed the right integer
+def checkSides(sides) :
+    print("Choose one of these values", accepted_values)
+    print("Default of 6 sides used")
+    if sides not in accepted_values:
+        return False
+    else:
+        return True
+
+# The dice now gets to print out a random number from one of the numbers listed above 
+def dice_4(sides):
+    sides_checked = checkSides(sides)
+    if sides == " ":
+        return random.randint(1, 6)
+    else:
+        return random.randint(1, sides)
+
+# print(dice_4(side_input))
+
+# ------------------
+
+# 2.5 
+def dice_5(sides, rolls):
+    list = []
+
+    sides_checked = checkSides(sides)
+    print(sides_checked)
+
+    for num in range(int(rolls)):
+        if sides == "":
+            roll = random.randint(1, 6)
+            list.append(roll)
+        else:
+            roll = random.randint(1, int(sides))
+            list.append(roll)
+
+    return list
+  
+
+
+roll_input = input("Enter number of rolls")
+print(dice_5(side_input,roll_input))
