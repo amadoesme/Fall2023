@@ -1,0 +1,99 @@
+# Esmeralda Amado
+
+import time
+import random
+
+# the number in the time.sleep(number) is how long in second it will pause
+
+print("I")
+time.sleep(0.25)
+print("Am")
+time.sleep(0.5)
+print("Majoring")
+time.sleep(0.75)
+print("In")
+time.sleep(1.0)
+print("Computer")
+time.sleep(2.0)
+print("Science")
+
+# The dash determines the separation of another activity in exercise 1
+print("--------------------------")
+
+# I print the time in Nanoseconds
+print(time.time())
+
+WhatTimeIsIt = time.time()
+print("Current time: ", WhatTimeIsIt)
+
+time.sleep(0.5)
+
+# Also prints what the time is after half a second
+WhatTimeIsIt = time.time()
+print("After 0.5 seconds: ", WhatTimeIsIt)
+
+time.sleep(1.0)
+
+# Time after 1 second
+WhatTimeIsIt=time.time()
+print("After 1 second: ", WhatTimeIsIt)
+
+print("--------------------------")
+
+# prints out the number from 1 - 10 in order
+number = 1
+while number <= 10:
+  print(number)
+  number += 1
+
+print("--------------------------")
+
+# Same as the last one but in the same line using a dash 
+num = 1
+while num <= 10:
+    print(num, end=" - ")
+    num += 1
+
+print("--------------------------")
+
+# It takes half a second to print the numbers 1 - 5 in order
+EsmeNum = 1
+while EsmeNum <= 5:
+    print(EsmeNum)
+    time.sleep(0.5)
+    EsmeNum += 1
+
+print("--------------------------")
+
+# Prints numbers from 10-20 with the multipliers of 2
+GagaNum = 10
+while GagaNum <= 20:
+    print(GagaNum)
+    GagaNum += 2
+
+print("--------------------------")
+
+# I subtract 3 numbers from 20 and so on but has to be greater than 0
+MultNum = 20
+while MultNum > 0:
+    MultNum -= 3
+    if MultNum < 0:
+        break
+    print(MultNum)
+
+print("--------------------------")
+
+# I added the random input so random numbers could appear from 0-100
+RandNun = 0
+while RandNun < 10:
+    print(random.randint(0, 100), end=" ")
+    RandNun += 1
+
+print("--------------------------")
+
+# The user is forced to enter a digit greater than 100, if not it keeps asking
+while True:
+    num = int(input("Enter an integer greater than 100: "))
+    if num > 100:
+        print("Thank you")
+        break
