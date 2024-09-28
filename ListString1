@@ -1,0 +1,52 @@
+# Esmeralda Amado
+
+# A. I make variables and then print them out
+red_fox = "A Red Fox"
+blue_mouse = "chased a Blue mouse"
+green_meadow = "across a Green meadow."
+print(red_fox)
+print(blue_mouse)
+print(green_meadow)
+print("----------------")
+
+# B. I made the variables into a full sentence
+full_sentence = red_fox + " " + blue_mouse + " " + green_meadow
+print(full_sentence)
+print("----------------")
+
+# C. All characters in full sentence are printed in lowercase
+lower_case_string = full_sentence.lower()
+print(lower_case_string)
+print(full_sentence)
+print("----------------")
+
+# D. All characters in full sentence are printed in uppercase
+upper_case_string = full_sentence.upper()
+print(upper_case_string)
+print(full_sentence)
+print("----------------")
+
+# E. I print out the character 19 that's in the sentence
+character_19 = full_sentence[19]
+print(character_19)
+print("----------------")
+
+# F.I print out the word blue 
+word_blue = full_sentence[19:23]
+print(word_blue)
+print("----------------")
+
+# G
+total_characters = len(full_sentence)
+print(total_characters)
+print("----------------")
+
+# H
+false_integer = full_sentence.isdigit()
+print(false_integer)
+print("----------------")
+
+# I
+convert_to_integer = "123"
+convertible_integer = convert_to_integer.isdigit()
+print(convertible_integer)
